@@ -1,0 +1,11 @@
+[build-system]
+
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "one-more-project"
+version = "0.1.0"
+description = "LangChain Academy Python Project"
+requires-python = ">=3.8"
+
