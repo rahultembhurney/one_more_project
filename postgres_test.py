@@ -15,5 +15,5 @@ def check_empty_datastet(df:pd.DataFrame):
                              config['postgres_conn']['feature_store_path'],)
     df = load_dataset(file_path=file_path)
     flag = df.shape[0]
-    assert(flag>0, "Dataset is empty")
+    assert flag>0, "Dataset is empty"
 
