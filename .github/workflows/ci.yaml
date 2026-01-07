@@ -33,6 +33,7 @@ jobs:
     steps:
     - name: export_data
       env:
+        PYTHONPATH: ./src
         dbname: ${{ secrets.DBNAME }}
         user: ${{ secrets.USER }}
         password: ${{ secrets.PASSWORD }}
