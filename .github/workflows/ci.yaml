@@ -39,7 +39,7 @@ jobs:
         host: ${{ secrets.HOST }}
         port: ${{ secrets.PORT }}
       run: |
-        python postgres_connection.py
+        python -m src.connections.postgres_connection
 
     - name: test_export_data
       run: |
