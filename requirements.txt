@@ -41,7 +41,7 @@ mypy-boto3-s3==1.42.16
 narwhals==2.14.0
 nest-asyncio==1.6.0
 numpy==2.2.6
--e git+https://github.com/rahultembhurney/one_more_project.git@6d91a66ca3e0527c7b38e3b0eadd242f4d9be7bc#egg=one_more_project
+-e git+https://github.com/rahultembhurney/one_more_project.git@59e0bc183fa06d3401495f6b2e68f65a608415a2#egg=one_more_project
 packaging==25.0
 pandas==2.3.3
 parso==0.8.5

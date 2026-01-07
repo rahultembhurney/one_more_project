@@ -4,11 +4,14 @@ from pathlib import Path
 import sys 
 import pandas as pd
 import os
+from dotenv import load_dotenv
 
 project_root = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(project_root))
 
 from src.logger import logger
+
+load_dotenv(project_root/".env")
 
 def load_yaml():
     with open("params.yaml", "r") as params:
@@ -24,11 +27,11 @@ def extract_file_from_table():
         logger.info("Importing connection details")
 
         logger.info("Establishing connection..")
-        conn = psycopg2.connect(dbname=config['postgres_conn']['dbname'],
-                                user=config['postgres_conn']['user'],
-                                password=config['postgres_conn']['password'],
-                                host=config['postgres_conn']['host'],
-                                port=config['postgres_conn']['port'])
+        conn = psycopg2.connect(dbname=os.environ.get("dbname"),
+                                user=os.environ.get("user"),
+                                password=os.environ.get("password"),
+                                host=os.environ.get("host"),
+                                port=os.environ.get("port"))
         logger.info("Connection established successfully")
         
         logger.info("extracting table/s")

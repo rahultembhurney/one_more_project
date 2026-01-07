@@ -1,9 +1,4 @@
 postgres_conn:
-  dbname: "postgres"
-  user: "postgres"
-  password: "1994"
-  host: "localhost"
-  port: "5432"
   schema_name: "credit_risk"
   table_name: "credit_risk_staging"
   feature_store_path: "Artifacts"
