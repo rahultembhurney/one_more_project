@@ -41,7 +41,7 @@ narwhals==2.14.0
 nest-asyncio==1.6.0
 numpy==2.2.6
 # Editable install with no version control (one-more-project==0.0.1)
--e c:\users\rtemb\documents\langchain\langchain-academy\one_more_project
+-e 
 packaging==25.0
 pandas==2.3.3
 parso==0.8.5
