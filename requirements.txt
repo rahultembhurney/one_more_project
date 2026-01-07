@@ -24,6 +24,7 @@ h11==0.16.0
 idna==3.11
 imbalanced-learn==0.14.1
 imblearn==0.0
+iniconfig==2.3.0
 ipykernel==7.1.0
 ipython==8.37.0
 jedi==0.19.2
@@ -40,21 +41,25 @@ mypy-boto3-s3==1.42.16
 narwhals==2.14.0
 nest-asyncio==1.6.0
 numpy==2.2.6
+-e git+https://github.com/rahultembhurney/one_more_project.git@6d91a66ca3e0527c7b38e3b0eadd242f4d9be7bc#egg=one_more_project
 packaging==25.0
 pandas==2.3.3
 parso==0.8.5
 pillow==12.0.0
 platformdirs==4.5.1
 plotly==6.5.0
+pluggy==1.6.0
 prompt_toolkit==3.0.52
 psutil==7.2.1
 psycopg2==2.9.11
+psycopg2-binary==2.9.11
 pure_eval==0.2.3
 pydantic==2.12.5
 pydantic_core==2.41.5
 Pygments==2.19.2
 pymongo==4.15.5
 pyparsing==3.3.1
+pytest==9.0.2
 python-dateutil==2.9.0.post0
 python-dotenv==1.2.1
 python-multipart==0.0.21
@@ -71,6 +76,7 @@ sklearn-compat==0.1.5
 stack-data==0.6.3
 starlette==0.50.0
 threadpoolctl==3.6.0
+tomli==2.3.0
 tornado==6.5.4
 traitlets==5.14.3
 typing-inspection==0.4.2
@@ -79,4 +85,3 @@ tzdata==2025.3
 urllib3==2.6.2
 uvicorn==0.40.0
 wcwidth==0.2.14
--e .
